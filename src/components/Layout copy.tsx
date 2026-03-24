@@ -37,7 +37,7 @@ const Layout: React.FC = () => {
             <div className="w-10 h-10 bg-[#2d5a27] rounded-full flex items-center justify-center text-white font-bold text-xl italic border-2 border-[#8cc63f]">H</div>
             <div className="leading-none">
               <span className="text-[#2d5a27] font-bold text-xl block tracking-tighter">HIMALAYA</span>
-              <span className="text-[#8cc63f] text-xs font-sans font-bold block uppercase tracking-tight">Hybrid Seeds</span>
+              <span className="text-[#8cc63f] text-xs font-sans font-bold block uppercase tracking-tight">Hybrid Seeds Company</span>
             </div>
           </div>
         </div>

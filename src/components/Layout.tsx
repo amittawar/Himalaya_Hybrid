@@ -37,53 +37,20 @@ const Layout: React.FC = () => {
             <div className="w-10 h-10 bg-[#2d5a27] rounded-full flex items-center justify-center text-white font-bold text-xl italic border-2 border-[#8cc63f]">H</div>
             <div className="leading-none">
               <span className="text-[#2d5a27] font-bold text-xl block tracking-tighter">HIMALAYA</span>
-              <span className="text-[#8cc63f] text-xs font-sans font-bold block uppercase tracking-tight">Hybrid Seeds</span>
+              <span className="text-[#8cc63f] text-xs font-sans font-bold block uppercase tracking-tight">Hybrid Seeds Company</span>
             </div>
           </div>
         </div>
 
-        <div className="md:block hidden">
-          <div>
-            <ul className="flex items-center gap-4 text-[18px] text-[#2d5a27] uppercase">
-              {/* <li><Link to="/">Home</Link></li> */}
-              <li><Link to="assets/pdf/Himalya_Catalogue.pdf" target="_blank">Catalogue</Link></li>
-            </ul>
-          </div>
-        </div>
-
-
-
-        <div className="flex items-center gap-4 md:hidden block">
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="p-2 hover:bg-gray-100 rounded-full transition-colors"
-            aria-label="Toggle menu"
-          >
-            {isMenuOpen ? <X size={28} className="text-[#2d5a27]" /> : <Menu size={28} className="text-[#2d5a27]" />}
-          </button>
+        <div>
+          <ul className="flex items-center gap-4 text-[18px] text-[#2d5a27] uppercase font-bold">
+            {/* <li><Link to="/">Home</Link></li> */}
+            <li><Link to="assets/pdf/Himalya_Catalogue.pdf" target="_blank" rel="noopener noreferrer">Catalogue</Link></li>
+          </ul>
         </div>
       </nav>
 
-      {/* Mobile Menu Overlay */}
-      {isMenuOpen && (
-        <div className="fixed inset-0 z-40 bg-white pt-24 px-6 animate-slide-up shadow-2xl">
-          <ul className="space-y-6 text-2xl font-medium text-[#2d5a27]">
-            <li className="border-b border-gray-100 pb-2 cursor-pointer" onClick={() => { setIsMenuOpen(false); navigate('/'); }}>{t.home}</li>
-            {/* <li className="border-b border-gray-100 pb-2" onClick={() => setIsMenuOpen(false)}>{t.aboutUs}</li> */}
-            <li className="border-b border-gray-100 pb-2">
-              <a
-                href="assets/pdf/Himalya_Catalogue.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {t.aboutUs}
-              </a>
-            </li>
-
-
-          </ul>
-        </div>
-      )}
+      {/* Mobile Menu Overlay Removed */}
 
       {/* Main Content */}
       <Outlet />

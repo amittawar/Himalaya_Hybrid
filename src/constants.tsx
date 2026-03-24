@@ -112,6 +112,24 @@ export const CULTIVATION_GUIDES: Record<string, CultivationGuide> = {
 
   },
 
+  'chilli': {
+    title: "Chilli Cultivation Guide",
+
+    section2: {
+      title: "Detailed Land and Soil Preparation",
+      points: [
+        "Site Selection & Soil Type: Choose a sunny location with well-drained soil, preferably sandy loam.",
+        "Land Preparation: Deep plow the field to break up hardpan, followed by harrowing to achieve a fine tilth.",
+        "Bed Construction: Construct raised beds or ridges to facilitate good drainage, especially in high rainfall areas. Beds should be about 1 meter wide, 30 cm high, and spaced 0.5 meters apart.",
+        "Soil Amendments: Incorporate well-decomposed manure or compost to improve soil structure.",
+        "Liming: If soil pH is below 5.5, apply agricultural lime (1–3 tons/ha) one month before planting.",
+        "Fertilizer Application: Apply basal fertilizer (e.g., NPK) during bed preparation.",
+        "Mulching: Cover beds with plastic mulch to retain moisture, suppress weeds, and regulate soil temperature.",
+        "Soil Disinfection: If necessary, treat the soil to control soil-borne diseases and pests before planting."
+      ]
+    },
+  },
+
 
 
 
@@ -803,17 +821,20 @@ export const CATEGORIES: Category[] = [
           { id: 'hhs555', name: 'HHS - 555' },
           { id: 'hs8815', name: 'HS - 8815' },
           { id: 'saarika', name: 'SAARIKA' },
-          { id: 'hhs8862', name: 'HHS - 8862' }
+          { id: 'hhs8862', name: 'HHS - 8862' },
+          { id: 'hhs-shagun', name: 'HHS-SHAGUN', badge: 'NEW' }
         ]
       },
       {
         id: 'tomato',
         name: 'Tomato',
+        // image: '/assets/image/tomato_Indra.jpg',
         products: [
-          { id: 'amar', name: 'AMAR - 1129', badge: 'F1 Hybrid' },
-          { id: 'bheema', name: 'BHEEMA - 85', badge: 'F1 Hybrid' },
-          { id: 'dhruv', name: 'DHRUV - 1124', badge: 'F1 Hybrid' },
-          { id: 'indra', name: 'INDRA - 1125', badge: 'F1 Hybrid' }
+          { id: 'amar', name: 'AMAR - 1129', badge: 'F1 Hybrid', image: '/assets/image/tomato_amar.jpg' },
+          { id: 'bheema', name: 'BHEEMA - 85', badge: 'F1 Hybrid', image: '/assets/image/bheema_tomato.jpg' },
+          { id: 'dhruv', name: 'DHRUV - 1124', badge: 'F1 Hybrid', image: '/assets/image/tomato_dhruv.jpg' },
+          { id: 'indra', name: 'INDRA - 1125', badge: 'F1 Hybrid', image: '/assets/image/tomato_Indra.jpg' },
+          { id: 'aasha', name: 'AASHA', badge: 'HIGH YIELD', }
         ]
       },
       {
@@ -821,7 +842,16 @@ export const CATEGORIES: Category[] = [
         name: 'Hot Pepper',
         products: [
           { id: 'hhs7888', name: 'HHS - 7888' },
-          { id: 'hhs-supreme', name: 'HHS - SUPREME', badge: 'NEW LAUNCH' },
+          { id: 'hhs-supreme', name: 'HHS - SUPREME', badge: 'NEW LAUNCH' }
+        ]
+      },
+      {
+        id: 'chilli',
+        name: 'Chilli',
+        products: [
+          { id: 'hhs474', name: 'HHS-474' },
+          { id: 'hhs8874', name: 'HHS-8874' },
+          { id: 'shakti', name: 'SHAKTI' }
         ]
       },
 
@@ -832,7 +862,9 @@ export const CATEGORIES: Category[] = [
           { id: 'venus', name: 'VENUS', badge: 'F1 Hybrid' },
           { id: 'mitraa', name: 'MITRAA', badge: 'F1 Hybrid' },
           { id: 'pakeeza', name: 'PAKEEZA', badge: 'F1 Hybrid' },
-          { id: 'pepino', name: 'PEPINO', badge: 'F1 Hybrid' }
+          { id: 'pepino', name: 'PEPINO', badge: 'F1 Hybrid' },
+          { id: 'adora', name: 'ADORA' },
+          { id: 'alexa', name: 'ALEXA' }
         ]
       },
       {
@@ -841,20 +873,25 @@ export const CATEGORIES: Category[] = [
         products: [
           { id: 'noor111', name: 'Noor' },
           { id: 'sultan', name: 'Sultan' },
+          { id: 'madhu-milan', name: 'Madhu Milan', badge: 'SWEET' }
         ]
       },
       {
         id: 'pumpkin',
         name: 'Pumpkin',
         products: [
-          { id: 'virat', name: 'Virat' }
+          { id: 'virat', name: 'Virat' },
+          { id: 'akash', name: 'AKASH' },
+          { id: 'golden-star', name: 'GOLDEN STAR' }
         ]
       },
       {
         id: 'tinda',
         name: 'Tinda',
         products: [
-          { id: 'hhs11', name: 'HHS - 111' }
+          { id: 'hhs11', name: 'HHS - 111' },
+          { id: 'hhs11-op', name: 'Tinda HHS-11 (OP)' },
+          { id: 'himdev-hybrid', name: 'Tinda Himdev (Hybrid)' }
         ]
       },
       {
@@ -887,7 +924,8 @@ export const CATEGORIES: Category[] = [
         name: 'Cabbage',
         products: [
           { id: 'champion45', name: 'CHAMPION - 45', badge: 'F1 Hybrid' },
-          { id: 'veera60', name: 'VEERA - 60', badge: 'F1 Hybrid' }
+          { id: 'veera60', name: 'VEERA - 60', badge: 'F1 Hybrid' },
+          { id: 'golden-acre', name: 'Golden Acre (OP)' }
         ]
       },
 
@@ -899,7 +937,8 @@ export const CATEGORIES: Category[] = [
           { id: 'rani111', name: 'RANI - 111', badge: 'F1 Hybrid' },
           { id: 'greengold', name: 'GREEN GOLD', badge: 'F1 Hybrid' },
           { id: 'mohini', name: 'MOHINI', badge: 'F1 Hybrid' },
-          { id: 'sitara111', name: 'SITARA - 111', badge: 'F1 Hybrid' }
+          { id: 'sitara111', name: 'SITARA - 111', badge: 'F1 Hybrid' },
+          { id: 'satyajeet', name: 'SATYAJEET' }
         ]
       },
 
@@ -972,6 +1011,92 @@ export const CATEGORIES: Category[] = [
           { id: 'hs10', name: 'HS-10', badge: 'Seeds' },
           { id: 'greenwonder', name: 'Green Wonder', badge: 'Variety' }
         ]
+      },
+      {
+        id: 'white-sponge-gourd',
+        name: 'White Sponge Gourd',
+        products: [
+          { id: 'rani', name: 'RANI' },
+          { id: 'maharani', name: 'MAHARANI' }
+        ]
+      },
+      {
+        id: 'ridge-gourd',
+        name: 'Ridge Gourd',
+        products: [
+          { id: 'aman', name: 'AMAN' },
+          { id: 'zeenat', name: 'ZEENAT' }
+        ]
+      },
+      {
+        id: 'muskmelon',
+        name: 'Muskmelon',
+        products: [
+          { id: 'him-giri', name: 'HIM GIRI', badge: 'SWEET' },
+          { id: 'kundan', name: 'KUNDAN', badge: 'HYBRID' }
+        ]
+      },
+      {
+        id: 'brinjal',
+        name: 'Brinjal',
+        products: [
+          { id: 'hhs881', name: 'HHS-881', badge: 'BLACK' },
+          { id: 'hhs772', name: 'HHS-772', badge: 'ROUND' }
+        ]
+      },
+      {
+        id: 'onion',
+        name: 'Onion',
+        products: [
+          { id: 'nasik-red', name: 'Nasik Red', badge: 'OP' },
+          { id: 'pusa-red', name: 'Pusa Red', badge: 'OP' }
+        ]
+      },
+      {
+        id: 'cauliflower',
+        name: 'Cauliflower',
+        products: [
+          { id: 'him-gold', name: 'HIM GOLD', badge: 'HYBRID' },
+          { id: 'early-snow', name: 'EARLY SNOWBALL' }
+        ]
+      },
+      {
+        id: 'mustard',
+        name: 'Mustard',
+        products: [
+          { id: 'black-gold', name: 'BLACK GOLD', badge: 'HIGH OIL' },
+          { id: 'hhs-sarson', name: 'HHS SARSON' }
+        ]
+      },
+      {
+        id: 'maize',
+        name: 'Maize',
+        products: [
+          { id: 'hhs999', name: 'HHS-999', badge: 'HYBRID' },
+          { id: 'corn-king', name: 'CORN KING' }
+        ]
+      },
+      {
+        id: 'wheat',
+        name: 'Wheat',
+        products: [
+          { id: 'hhs-shakti', name: 'HHS SHAKTI', badge: 'RESEARCH' }
+        ]
+      },
+      {
+        id: 'ssg',
+        name: 'SSG Multi-cut',
+        products: [
+          { id: 'hhs-ssg1', name: 'HHS SSG-1', badge: 'HIGH FEED' },
+          { id: 'sweet-jumbo', name: 'SWEET JUMBO' }
+        ]
+      },
+      {
+        id: 'berseem',
+        name: 'Berseem',
+        products: [
+          { id: 'pusa-giant', name: 'Pusa Giant' }
+        ]
       }
     ]
   }
@@ -993,7 +1118,7 @@ export const TRANSLATIONS: Record<Language, TranslationStrings> = {
     products: 'PRODUCTS',
     media: 'MEDIA',
     helpCenter: 'HELP CENTER',
-    // allRightsReserved: ''
+    allRightsReserved: 'Himalaya Hybrid Seeds Company. Copyright 2025. All Rights Reserved.'
   },
   hi: {
     findCatalog: 'अपना फसल कैटलॉग खोजें',

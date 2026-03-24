@@ -51,8 +51,9 @@ const ProductDetailPage: React.FC = () => {
   return (
     <main className="flex-grow animate-slide-up pb-20">
       {/* Detailed Header */}
-      <header className="bg-[#2d5a27] text-white pt-8 pb-16 px-6 relative overflow-hidden">
-        <div className="max-w-4xl mx-auto relative z-10">
+
+      <header className="bg-[#2d5a27] text-white pt-8 pb-20 px-6 relative overflow-hidden min-h-[250px] flex items-center">
+        <div className="max-w-4xl mx-auto relative z-10 w-full">
           <button
             onClick={() => navigate('/')}
             className="flex items-center gap-2 text-[#8cc63f] font-sans font-bold mb-6 hover:translate-x-[-4px] transition-transform"
@@ -61,20 +62,33 @@ const ProductDetailPage: React.FC = () => {
             <span>Back to Search</span>
           </button>
 
-          <div className="flex flex-col md:flex-row md:items-end gap-4">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-8">
             <div className="flex-grow">
               <p className="text-[#8cc63f] font-sans font-bold uppercase tracking-widest text-sm mb-1">{currentCrop?.name}</p>
-              <h1 className="text-4xl md:text-6xl font-bold uppercase">{currentProduct?.name}</h1>
-            </div>
-            <div className="shrink-0">
-              <div className="bg-[#8cc63f] text-[#2d5a27] px-4 py-2 rounded-full font-bold text-sm inline-block shadow-lg">
-                {currentProduct?.badge || "PREMIUM HYBRID"}
+              <h1 className="text-4xl md:text-6xl font-bold uppercase drop-shadow-md leading-tight">{currentProduct?.name}</h1>
+              <div className="mt-4">
+                <div className="bg-[#8cc63f] text-[#2d5a27] px-4 py-2 rounded-full font-bold text-sm inline-block shadow-lg">
+                  {currentProduct?.badge || "PREMIUM HYBRID"}
+                </div>
               </div>
             </div>
+
+            {(currentProduct?.image || currentCrop?.image) && (
+              <div className="shrink-0 relative group">
+                <div className="absolute inset-0 bg-[#8cc63f] blur-2xl opacity-20 group-hover:opacity-40 transition-opacity rounded-full"></div>
+                <div className="relative w-40 h-40 md:w-52 md:h-52 bg-white p-2 rounded-2xl shadow-2xl transform transition-transform group-hover:rotate-0 duration-500 overflow-hidden">
+                  <img
+                    src={currentProduct?.image || currentCrop?.image}
+                    alt={currentProduct?.name || currentCrop?.name}
+                    className="w-full h-full object-cover rounded-xl"
+                  />
+                </div>
+              </div>
+            )}
           </div>
         </div>
         {/* Background Accent */}
-        <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+        <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl z-0"></div>
       </header>
 
       <div className="max-w-4xl mx-auto px-4 -mt-10 relative z-20">

@@ -6,11 +6,13 @@ export interface Product {
   name: string;
   description?: string;
   badge?: string;
+  image?: string;
 }
 
 export interface Crop {
   id: string;
   name: string;
+  image?: string;
   products: Product[];
 }
 
