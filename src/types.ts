@@ -7,12 +7,14 @@ export interface Product {
   description?: string;
   badge?: string;
   image?: string;
+  bannerImage?: string;
 }
 
 export interface Crop {
   id: string;
   name: string;
   image?: string;
+  bannerImage?: string;
   products: Product[];
 }
 

@@ -816,116 +816,126 @@ export const CATEGORIES: Category[] = [
       {
         id: 'bhindi',
         name: 'Bhindi',
+        bannerImage: '/assets/image/bail_banner.png',
         products: [
-          { id: 'mahima-super', name: 'MAHIMA SUPER', badge: 'HIGH YIELD' },
-          { id: 'hhs555', name: 'HHS - 555' },
-          { id: 'hs8815', name: 'HS - 8815' },
-          { id: 'saarika', name: 'SAARIKA' },
-          { id: 'hhs8862', name: 'HHS - 8862' },
-          { id: 'hhs-shagun', name: 'HHS-SHAGUN', badge: 'NEW' }
+          { id: 'mahima-super', name: 'MAHIMA SUPER', badge: 'HIGH YIELD', image: '/assets/image/bhindi_mahima.png' },
+          { id: 'hhs555', name: 'HHS - 555', image: '/assets/image/bhindi_hhs555.png' },
+          { id: 'hs8815', name: 'HS - 8815', image: '/assets/image/bhindi_hs8815.png' },
+          { id: 'saarika', name: 'SAARIKA', image: '/assets/image/bhindi_saarika.png' },
+          { id: 'hhs8862', name: 'HHS - 8862', image: '/assets/image/bhindi_hhs8862.png' },
+          { id: 'hhs-shagun', name: 'HHS-SHAGUN', badge: 'NEW', image: '/assets/image/bhindi_hhs-shagun.png' }
         ]
       },
       {
         id: 'tomato',
         name: 'Tomato',
-        // image: '/assets/image/tomato_Indra.jpg',
+        bannerImage: '/assets/image/inner_banner.png',
         products: [
-          { id: 'amar', name: 'AMAR - 1129', badge: 'F1 Hybrid', image: '/assets/image/tomato_amar.jpg' },
-          { id: 'bheema', name: 'BHEEMA - 85', badge: 'F1 Hybrid', image: '/assets/image/bheema_tomato.jpg' },
-          { id: 'dhruv', name: 'DHRUV - 1124', badge: 'F1 Hybrid', image: '/assets/image/tomato_dhruv.jpg' },
-          { id: 'indra', name: 'INDRA - 1125', badge: 'F1 Hybrid', image: '/assets/image/tomato_Indra.jpg' },
-          { id: 'aasha', name: 'AASHA', badge: 'HIGH YIELD', }
+          { id: 'amar', name: 'AMAR - 1129', badge: 'F1 Hybrid', image: '/assets/image/Tomato_AMAR.png' },
+          { id: 'bheema', name: 'BHEEMA - 85', badge: 'F1 Hybrid', image: '/assets/image/bheema-85.png' },
+          { id: 'dhruv', name: 'DHRUV - 1124', badge: 'F1 Hybrid', image: '/assets/image/Tomato_DHRUV.png' },
+          { id: 'indra', name: 'INDRA - 1125', badge: 'F1 Hybrid', image: '/assets/image/Tomato_INDRA.png' },
+          { id: 'aasha', name: 'HHS - 474', badge: 'F1 Hybrid', image: '/assets/image/hhs-474-tomato.png' }
         ]
       },
       {
         id: 'hot-pepper',
         name: 'Hot Pepper',
+        bannerImage: '/assets/image/bail_banner.png',
         products: [
-          { id: 'hhs7888', name: 'HHS - 7888' },
-          { id: 'hhs-supreme', name: 'HHS - SUPREME', badge: 'NEW LAUNCH' }
+          { id: 'hhs7888', name: 'HHS - 7888', image: '/assets/image/hot-pepper_hhs7888.png' },
+          { id: 'hhs-supreme', name: 'HHS - SUPREME', badge: 'NEW LAUNCH', image: '/assets/image/hot-pepper_hhs-supreme.png' }
         ]
       },
       {
         id: 'chilli',
         name: 'Chilli',
+        bannerImage: '/assets/image/inner_banner.png',
         products: [
-          { id: 'hhs474', name: 'HHS-474' },
-          { id: 'hhs8874', name: 'HHS-8874' },
-          { id: 'shakti', name: 'SHAKTI' }
+          { id: 'hhs474', name: 'HHS - 474', badge: 'F1 Hybrid', image: '/assets/image/hot-pepper-hhs-474.png' },
+          { id: 'hhs8874', name: 'HHS - 8874', badge: 'F1 Hybrid', image: '/assets/image/hot-pepper-hhs-8874.png' },
+          { id: 'shakti', name: 'HHS - SHAKTI', badge: 'F1 Hybrid', image: '/assets/image/hhs shakti.png' }
         ]
       },
-
       {
         id: 'cucumber',
         name: 'Cucumber',
+        bannerImage: '/assets/image/mix_banner.png',
         products: [
-          { id: 'venus', name: 'VENUS', badge: 'F1 Hybrid' },
-          { id: 'mitraa', name: 'MITRAA', badge: 'F1 Hybrid' },
-          { id: 'pakeeza', name: 'PAKEEZA', badge: 'F1 Hybrid' },
-          { id: 'pepino', name: 'PEPINO', badge: 'F1 Hybrid' },
-          { id: 'adora', name: 'ADORA' },
-          { id: 'alexa', name: 'ALEXA' }
+          { id: 'venus', name: 'VENUS', badge: 'F1 Hybrid', image: '/assets/image/cucumber-venus.png' },
+          { id: 'mitraa', name: 'MITRAA', badge: 'F1 Hybrid', image: '/assets/image/cucumber-mitraa.png' },
+          { id: 'pakeeza', name: 'PAKEEZA', badge: 'F1 Hybrid', image: '/assets/image/cucumber-pakeeza.png' },
+          { id: 'pepino', name: 'PEPINO', badge: 'F1 Hybrid', image: '/assets/image/cucumber-pepino.png' },
+          { id: 'adora', name: 'ADORA', badge: 'F1 Hybrid', image: '/assets/image/adora cucumber.png' },
+          { id: 'alexa', name: 'ALEXA', badge: 'F1 Hybrid', image: '' }
         ]
       },
       {
         id: 'watermelon',
         name: 'Watermelon',
+        bannerImage: '/assets/image/mix_banner.png',
         products: [
-          { id: 'noor111', name: 'Noor' },
-          { id: 'sultan', name: 'Sultan' },
+          { id: 'noor111', name: 'Noor', image: '/assets/image/watermelon_noor.png' },
+          { id: 'sultan', name: 'Sultan', image: '/assets/image/watermelon_sultan.png' },
           { id: 'madhu-milan', name: 'Madhu Milan', badge: 'SWEET' }
         ]
       },
       {
         id: 'pumpkin',
         name: 'Pumpkin',
+        bannerImage: '/assets/image/mix_banner.png',
         products: [
-          { id: 'virat', name: 'Virat' },
-          { id: 'akash', name: 'AKASH' },
-          { id: 'golden-star', name: 'GOLDEN STAR' }
+          { id: 'virat', name: 'Virat', badge: 'F1 Hybrid', image: '/assets/image/pumpkin_virat.png' },
+          { id: 'akash', name: 'AKASH', badge: 'F1 Hybrid', image: '/assets/image/pumpkin-Akash.png' },
+          { id: 'golden-star', name: 'GOLDEN STAR', badge: 'F1 Hybrid', image: '/assets/image/golden star pumpkin.png' }
         ]
       },
       {
         id: 'tinda',
         name: 'Tinda',
+        bannerImage: '/assets/image/inner_banner.png',
         products: [
-          { id: 'hhs11', name: 'HHS - 111' },
+          { id: 'hhs11', name: 'HHS - 111', image: '/assets/image/tinda_hhs111.png' },
           { id: 'hhs11-op', name: 'Tinda HHS-11 (OP)' },
-          { id: 'himdev-hybrid', name: 'Tinda Himdev (Hybrid)' }
+          { id: 'himdev-hybrid', name: 'Tinda Himdev (Hybrid)', badge: 'F1 Hybrid', image: '/assets/image/himdev.png' }
         ]
       },
       {
         id: 'knolkhol',
         name: 'Knol Khol',
+        bannerImage: '/assets/image/mix_banner.png',
         products: [
-          { id: 'early111', name: 'EARLY - 111' }
+          { id: 'early111', name: 'EARLY - 111', image: '/assets/image/knol_khol_early111.png' }
         ]
       },
 
       {
         id: 'broccoli',
         name: 'Broccoli',
+        bannerImage: '/assets/image/inner_banner.png',
         products: [
-          { id: 'grace', name: 'GRACE', badge: 'F1 Hybrid' }
+          { id: 'grace', name: 'GRACE', badge: 'F1 Hybrid', image: '/assets/image/broccoli_grace.png' }
         ]
       },
       {
         id: 'bottle-gourd',
         name: 'Bottle Gourd',
+        bannerImage: '/assets/image/bail_banner.png',
         products: [
-          { id: 'esha', name: 'ESHA', badge: 'F1 Hybrid' },
-          { id: 'hhs408', name: 'HHS - 408', badge: 'F1 Hybrid' },
-          { id: 'surbhi111', name: 'SURBHI - 111', badge: 'F1 Hybrid' }
+          { id: 'esha', name: 'ESHA', badge: 'F1 Hybrid', image: '/assets/image/bottlegroud_esha.png' },
+          { id: 'hhs408', name: 'HHS - 408', badge: 'F1 Hybrid', image: '/assets/image/bottlegroud_hhs408.png' },
+          { id: 'surbhi111', name: 'SURBHI - 111', badge: 'F1 Hybrid', image: '/assets/image/bottlegroud_surbhi111.png' }
         ]
       },
 
       {
         id: 'cabbage',
         name: 'Cabbage',
+        bannerImage: '/assets/image/mix_banner.png',
         products: [
-          { id: 'champion45', name: 'CHAMPION - 45', badge: 'F1 Hybrid' },
-          { id: 'veera60', name: 'VEERA - 60', badge: 'F1 Hybrid' },
-          { id: 'golden-acre', name: 'Golden Acre (OP)' }
+          { id: 'champion45', name: 'CHAMPION - 45', badge: 'F1 Hybrid', image: '/assets/image/cabbage_champion.png' },
+          { id: 'veera60', name: 'VEERA - 60', badge: 'F1 Hybrid', image: '/assets/image/cabbage_veera.png' },
+          { id: 'golden-acre', name: 'Golden Acre (OP)', badge: 'Variety', image: '/assets/image/early golden acre.png' }
         ]
       },
 
@@ -933,83 +943,92 @@ export const CATEGORIES: Category[] = [
       {
         id: 'sponge-gourd',
         name: 'Sponge Gourd',
+        bannerImage: '/assets/image/bail_banner.png',
         products: [
-          { id: 'rani111', name: 'RANI - 111', badge: 'F1 Hybrid' },
-          { id: 'greengold', name: 'GREEN GOLD', badge: 'F1 Hybrid' },
-          { id: 'mohini', name: 'MOHINI', badge: 'F1 Hybrid' },
-          { id: 'sitara111', name: 'SITARA - 111', badge: 'F1 Hybrid' },
-          { id: 'satyajeet', name: 'SATYAJEET' }
+          { id: 'rani111', name: 'RANI - 111', badge: 'F1 Hybrid', image: '/assets/image/rani-111.png' },
+          { id: 'greengold', name: 'GREEN GOLD', badge: 'F1 Hybrid', image: '/assets/image/spongGround_gold.png' },
+          { id: 'mohini', name: 'MOHINI', badge: 'F1 Hybrid', image: '/assets/image/spongGround_mohini.png' },
+          { id: 'sitara111', name: 'SITARA - 111', badge: 'F1 Hybrid', image: '/assets/image/spongGround_sitara.png' },
+          { id: 'satyajeet', name: 'SATYAJEET', badge: 'F1 Hybrid', image: '/assets/image/satyajeet.png' }
         ]
       },
 
       {
         id: 'bitter-gourd',
         name: 'Bitter Gourd',
+        bannerImage: '/assets/image/mix_banner.png',
         products: [
-          { id: 'maharaja', name: 'Maharaja', badge: 'F1 Hybrid' },
+          { id: 'maharaja', name: 'Maharaja', badge: 'F1 Hybrid', image: '/assets/image/BitterGround_maharaja.png' },
         ]
       },
       {
         id: 'radish',
         name: 'Radish',
+        bannerImage: '/assets/image/bail_banner.png',
         products: [
-          { id: 'early40', name: 'Early 40 Days', badge: 'Variety' },
-          { id: 'chinese-pink', name: 'Chinese Pink', badge: 'Variety' },
-          { id: 'him222', name: 'HIM - 222', badge: 'F1 Hybrid' },
-          { id: 'hill-queen', name: 'Hill Queen', badge: 'Variety' },
-          { id: 'mino-early', name: 'Mino Early Long', badge: 'Variety' },
-          { id: 'japani-white', name: 'Japani White', badge: 'Variety' },
-          { id: 'palak-patta', name: 'Palak Patta', badge: 'Variety' },
-          { id: 'pusa-chetki', name: 'Pusa Chetki Long', badge: 'Variety' }
+          { id: 'early40', name: 'Early 40 Days', badge: 'Variety', image: '/assets/image/radish_early40.png' },
+          { id: 'chinese-pink', name: 'Chinese Pink', badge: 'Variety', image: '/assets/image/radish_chinese.png' },
+          { id: 'him222', name: 'HIM - 222', badge: 'F1 Hybrid', image: '/assets/image/radish_him.png' },
+          { id: 'hill-queen', name: 'Hill Queen', badge: 'Variety', image: '/assets/image/radish_hill.png' },
+          { id: 'mino-early', name: 'Mino Early Long', badge: 'Variety', image: '/assets/image/radish_mind.png' },
+          { id: 'japani-white', name: 'Japani White', badge: 'Variety', image: '/assets/image/radish_japani.png' },
+          { id: 'palak-patta', name: 'Palak Patta', badge: 'Variety', image: '/assets/image/radish_palak.png' },
+          { id: 'pusa-chetki', name: 'Pusa Chetki Long', badge: 'Variety', image: '/assets/image/radish_pusa.png' }
         ]
       },
       {
         id: 'carrot',
         name: 'Carrot',
+        bannerImage: '/assets/image/inner_banner.png',
         products: [
-          { id: 'super111', name: 'SUPER - 111', badge: 'Seeds' }
+          { id: 'super111', name: 'SUPER - 111', badge: 'Seeds', image: '/assets/image/carrot_super111.png' }
         ]
       },
       {
         id: 'beet-root',
         name: 'Beet Root',
+        bannerImage: '/assets/image/mix_banner.png',
         products: [
-          { id: 'hdr88', name: 'HDR-88', badge: 'Variety' },
-          { id: 'ruby-queen', name: 'Ruby Queen', badge: 'Variety' }
+          { id: 'hdr88', name: 'HDR-88', badge: 'Variety', image: '/assets/image/beetroot_hdr88.png' },
+          { id: 'ruby-queen', name: 'Ruby Queen', badge: 'Variety', image: '/assets/image/beetroot_rubyquenn.png' }
         ]
       },
       {
         id: 'cowpea',
         name: 'Cowpea',
+        bannerImage: '/assets/image/inner_banner.png',
         products: [
-          { id: 'tejas4', name: 'Tejas-4', badge: 'Premium Quality' },
-          { id: 'nidhi6', name: 'Nidhi-6', badge: 'Premium Quality' },
-          { id: 'kranti5', name: 'Kranti-5', badge: 'Premium Quality' }
+          { id: 'tejas4', name: 'Tejas-4', badge: 'Premium Quality', image: '/assets/image/cowPea_tejas.png' },
+          { id: 'nidhi6', name: 'Nidhi-6', badge: 'Premium Quality', image: '/assets/image/cowPea_nidhi.png' },
+          { id: 'kranti5', name: 'Kranti-5', badge: 'Premium Quality', image: '/assets/image/cowPea_kranti.png' }
         ]
       },
       {
         id: 'french-beans',
         name: 'French Beans',
+        bannerImage: '/assets/image/bail_banner.png',
         products: [
-          { id: 'lucky111', name: 'LUCKY - 111', badge: 'Variety' },
-          { id: 'pencil', name: 'PENCIL', badge: 'Variety' },
-          { id: 'ratna-gold', name: 'RATNA GOLD', badge: 'Variety' }
+          { id: 'lucky111', name: 'LUCKY - 111', badge: 'Variety', image: '/assets/image/frenchBean_lucky.png' },
+          { id: 'pencil', name: 'PENCIL', badge: 'Variety', image: '/assets/image/frenchBean_pencil.png' },
+          { id: 'ratna-gold', name: 'RATNA GOLD', badge: 'Variety', image: '/assets/image/frenchBean_ratna.png' }
         ]
       },
       {
         id: 'coriander',
         name: 'Coriander',
+        bannerImage: '/assets/image/inner_banner.png',
         products: [
-          { id: 'him111', name: 'Him-111', badge: 'Variety' }
+          { id: 'him111', name: 'Him-111', badge: 'Variety', image: '/assets/image/coriander_him111.png' }
         ]
       },
 
       {
         id: 'peas',
         name: 'Peas',
+        bannerImage: '/assets/image/mix_banner.png',
         products: [
-          { id: 'hs10', name: 'HS-10', badge: 'Seeds' },
-          { id: 'greenwonder', name: 'Green Wonder', badge: 'Variety' }
+          { id: 'hs10', name: 'HS-10', badge: 'Seeds', image: '/assets/image/Peas_hs10.png' },
+          { id: 'greenwonder', name: 'Green Wonder', badge: 'Variety', image: '/assets/image/Peas_green-wonder.png' }
         ]
       },
       {
@@ -1024,8 +1043,8 @@ export const CATEGORIES: Category[] = [
         id: 'ridge-gourd',
         name: 'Ridge Gourd',
         products: [
-          { id: 'aman', name: 'AMAN' },
-          { id: 'zeenat', name: 'ZEENAT' }
+          { id: 'aman', name: 'AMAN', badge: 'F1 Hybrid', image: '/assets/image/aman ridge gourd.png' },
+          { id: 'zeenat', name: 'ZEENAT', badge: 'F1 Hybrid', image: '/assets/image/zeenat-Ridge-gourd.png' }
         ]
       },
       {
@@ -1060,44 +1079,44 @@ export const CATEGORIES: Category[] = [
           { id: 'early-snow', name: 'EARLY SNOWBALL' }
         ]
       },
-      {
-        id: 'mustard',
-        name: 'Mustard',
-        products: [
-          { id: 'black-gold', name: 'BLACK GOLD', badge: 'HIGH OIL' },
-          { id: 'hhs-sarson', name: 'HHS SARSON' }
-        ]
-      },
-      {
-        id: 'maize',
-        name: 'Maize',
-        products: [
-          { id: 'hhs999', name: 'HHS-999', badge: 'HYBRID' },
-          { id: 'corn-king', name: 'CORN KING' }
-        ]
-      },
-      {
-        id: 'wheat',
-        name: 'Wheat',
-        products: [
-          { id: 'hhs-shakti', name: 'HHS SHAKTI', badge: 'RESEARCH' }
-        ]
-      },
-      {
-        id: 'ssg',
-        name: 'SSG Multi-cut',
-        products: [
-          { id: 'hhs-ssg1', name: 'HHS SSG-1', badge: 'HIGH FEED' },
-          { id: 'sweet-jumbo', name: 'SWEET JUMBO' }
-        ]
-      },
-      {
-        id: 'berseem',
-        name: 'Berseem',
-        products: [
-          { id: 'pusa-giant', name: 'Pusa Giant' }
-        ]
-      }
+      // {
+      //   id: 'mustard',
+      //   name: 'Mustard',
+      //   products: [
+      //     { id: 'black-gold', name: 'BLACK GOLD', badge: 'HIGH OIL' },
+      //     { id: 'hhs-sarson', name: 'HHS SARSON' }
+      //   ]
+      // },
+      // {
+      //   id: 'maize',
+      //   name: 'Maize',
+      //   products: [
+      //     { id: 'hhs999', name: 'HHS-999', badge: 'HYBRID' },
+      //     { id: 'corn-king', name: 'CORN KING' }
+      //   ]
+      // },
+      // {
+      //   id: 'wheat',
+      //   name: 'Wheat',
+      //   products: [
+      //     { id: 'hhs-shakti', name: 'HHS SHAKTI', badge: 'RESEARCH' }
+      //   ]
+      // },
+      // {
+      //   id: 'ssg',
+      //   name: 'SSG Multi-cut',
+      //   products: [
+      //     { id: 'hhs-ssg1', name: 'HHS SSG-1', badge: 'HIGH FEED' },
+      //     { id: 'sweet-jumbo', name: 'SWEET JUMBO' }
+      //   ]
+      // },
+      // {
+      //   id: 'berseem',
+      //   name: 'Berseem',
+      //   products: [
+      //     { id: 'pusa-giant', name: 'Pusa Giant' }
+      //   ]
+      // }
     ]
   }
 ];
